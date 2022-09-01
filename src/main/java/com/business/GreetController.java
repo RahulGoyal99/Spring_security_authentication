@@ -1,0 +1,15 @@
+package com.business;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetController {
+
+	@GetMapping("/")
+	public String getMessage() {
+		return "<h1> Spring Security Authentication </h1>";
+	}
+
+	
+}
